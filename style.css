@@ -1,27 +1,4 @@
-p {background-color: #eee;
-text-align: left;
-padding: 10px 0 50px 35px;
-margin: 20px auto;
-font-family: Arial;
-font-size:7em;
-text-transform: uppercase;
-color: #fff;
-text-shadow: 10px 10px 0 #ffd217, 20px 20px 0 #5ac7ff, 30px 30px 0 #ffd217, 40px 40px 0 #5ac7ff;}
-q {background-color: #000;
-padding:90px 0 0;
-margin: 20px auto;
-font-family: Arial;
-font-size: 200px; text-transform: uppercase; color: #fff;
-text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;}
-w {background-color: #000;
-padding: 20px 0;
-margin: 20px auto;
-font-family: Garamond;
-font-size: 7em;
-text-transform: uppercase;
-color: #fff;
-text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;}
-<ul class="nav site-nav">
+
     <li><a href=#>Lorem</a></li><!--
  --><li><a href=#>Ipsum</a></li><!--
  --><li class=flyout>
@@ -94,3 +71,27 @@ text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 
  --><li><a href=#>Sit</a></li><!--
  --><li><a href=#>Amet</a></li>
 </ul>​
+p {background-color: #eee;
+text-align: left;
+padding: 10px 0 50px 35px;
+margin: 20px auto;
+font-family: Arial;
+font-size:7em;
+text-transform: uppercase;
+color: #fff;
+text-shadow: 10px 10px 0 #ffd217, 20px 20px 0 #5ac7ff, 30px 30px 0 #ffd217, 40px 40px 0 #5ac7ff;}
+q {background-color: #000;
+padding:90px 0 0;
+margin: 20px auto;
+font-family: Arial;
+font-size: 200px; text-transform: uppercase; color: #fff;
+text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;}
+w {background-color: #000;
+padding: 20px 0;
+margin: 20px auto;
+font-family: Garamond;
+font-size: 7em;
+text-transform: uppercase;
+color: #fff;
+text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;}
+<ul class="nav site-nav">
