@@ -1,0 +1,38 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=windows-1251">
+<title>Стили</title>
+<style> p {background-color: #fff;
+        margin: 20px auto;
+        font-family: Arial;
+        font-size: 2em; 
+        text-transform: uppercase;
+        color: rgba(0,168,255,0.5);
+        text-shadow: 8px 8px 0 rgba(255,0,180,0.5);}
+</style>
+<script>
+function er(){
+
+document.getElementById("inf1").innerHTML ="<p>"+"1/x^2"+"</p>";
+document.getElementById("inf2").innerHTML ="<p>"+"a/(b*c)"+"</p>";
+document.getElementById("inf3").innerHTML ="<p>"+"ac/b"+"</p>";
+document.getElementById("inf4").innerHTML ="<p>"+"a+b/2" +"</p>";
+document.getElementById("inf5").innerHTML ="<p>"+"5,45*(a+2b)/2-a" +"</p>";
+}
+</script>
+</head>
+<body>
+<button onclick="er()">1.15</button>
+<br>
+<br>
+
+<br>
+А<div id="inf1"></div>
+Б<div id="inf2"></div>
+В<div id="inf3"></div>
+Г<div id="inf4"></div>
+Д<div id="inf5"></div>
+</body>
+</html>
