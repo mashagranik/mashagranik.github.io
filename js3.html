@@ -1,106 +1,70 @@
-
 <html>
 <head>
-  <link href="style.css" rel="stylesheet">
 <meta http-equiv="Content-Type"
 content="text/html; charset=windows-1251">
 <title>Стили</title>
-<script>
-function cat(){
-n=document.getElementById("n_znach").value;
-x=n%100;
-x=x*10;
-x=(n-n%100)/100+x
-document.getElementById("jenka").innerHTML = "x= "+ x;
+<style>
+h1 {
+font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+font-size: 42px;
+padding: 10px 20px;
+text-align: center;
+text-transform: uppercase;
+text-rendering: optimizeLegibility;
 }
-</script>
+h1.elegantshadow {
+color: #131313;
+background-color: #e7e5e4;
+letter-spacing: 0.15em;
+text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474, -3px 6px 1px #787777, -4px 8px 1px #7b7a7a, -5px 10px 1px #7f7d7d, -6px 12px 1px #828181;
+}
+</style>
 </head>
 <body>
-  <ul class="nav site-nav">
-    <li><a href="index.html">main</a></li><!--
- --><li><a href="death.html">death</a></li><!--
- --><li class=flyout>
-    
-        <a href=#>map</a>
-        
-        <!-- Flyout -->
-        <ul class="flyout-content nav stacked">
-            <li><a href="css.html">CSS</a></li>
-            <li><a href=js.html>JS</a></li>
-            <li class="flyout-alt">
-                
-                <a href=#>Baz Foo</a>
-                
-                <!-- Flyout -->
-                <ul class="flyout-content nav stacked">
-                    <li><a href=#>Foo Bar</a></li>
-                    <li><a href=#>Bar Baz</a></li>
-                    <li class="flyout-alt">
-                        
-                        <a href=#>Baz Foo</a>
-                        
-                        <!-- Flyout -->
-                        <ul class="flyout-content nav stacked">
-                            <li class="flyout-alt">
-                                
-                                <a href=#>Foo Bar</a>
-                                
-                                <!-- Flyout -->
-                                <ul class="flyout-content nav stacked">
-                                    <li><a href=#>Bar Baz</a></li>
-                                    <li class="flyout-alt">
-                                        
-                                        <a href=#>Baz Foo</a>
-                                        
-                                        <!-- Flyout -->
-                                        <ul class="flyout-content nav stacked">
-                                            <li><a href=#>Bar Baz</a></li>
-                                            <li><a href=#>Baz Foo</a></li>
-                                            <li><a href=#>Foo Bar</a></li>
-                                        </ul>
-                                    
-                                    </li>
-                                    <li><a href=#>Foo Bar</a></li>
-                                </ul>
-                                
-                            </li>
-                            <li><a href=#>Bar Baz</a></li>
-                            <li class="flyout-alt">
-                                
-                                <a href=#>Baz Foo</a>
-                                
-                                <!-- Flyout -->
-                                <ul class="flyout-content nav stacked">
-                                    <li><a href=#>Bar Baz</a></li>
-                                    <li><a href=#>Baz Foo</a></li>
-                                    <li><a href=#>Foo Bar</a></li>
-                                </ul>
-                                
-                            </li>
-                        </ul>
-                        
-                    </li>
-                </ul>
-                
-            </li>
-        </ul>
-    
-    </li><!--
- --><li><a href=#>eyes</a></li><!--
- --><li><a href=#>quote</a></li>
-</ul>
+<script>
+function func(){
+st='<h1 class="elegantshadow">'
+n=document.getElementById("a_znach").value;
+y=n
+x=n%10
+a=(n-x)/10
+n=100*x+a
+document.getElementById("a").innerHTML =st+"2.25= "+ n+"</h1>";
+x=(y-y%100)/100
+a=y%100
+n=10*a+x
+document.getElementById("b").innerHTML =st+"2.27= "+ n+"</h1>";
+  x=((y-y%100)/10+y%10)
+n=(y%100-y%10)*10+x
+
+document.getElementById("c").innerHTML =st+"2.29= "+ n+"</h1>";
+x=((y-y%100)/10+y%10)
+n=10*x+(y%100-y%10)/10
+document.getElementById("d").innerHTML =st+"2.31= "+ n+"</h1>";
+x=y%10
+a=(y%100-x)+(y-y%100)/100
+n=100*x+a
+document.getElementById("e").innerHTML =st+"2.33= "+ n+"</h1>";
+}
+</script>
+______________________________________________
 <br>
 <br>
-2.25
-<br>
-n=<input type="text" value="234" id="n_znach">
+n=<input type="text" value="0" id="a_znach">
 <br>
 <br>
-<button onclick="cat()"> dr </button>
+<button onclick="func()"> knopka </button>
 <br>
 <br>
-<div id="jenka"></div>
+<div id="a"></div>
+<div id="b"></div>
+<div id="c"></div>
+<div id="d"></div>
+<div id="e"></div>
+
+<br>
+<br>
+<br>
 
 </body>
 </html>
-
