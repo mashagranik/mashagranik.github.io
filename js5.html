@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<head>
+		<title>canvasExample</title>
+        <meta charset='utf-8' />
+        		<script>
+		function er1(){
+var canvas = document.getElementById('example1');
+var ctx = canvas.getContext('2d');
+ctx.beginPath();
+ctx.moveTo(320, 0);
+ctx.lineTo(320, 480);
+ctx.moveTo(0, 240);
+ctx.lineTo(640, 240);
+
+ctx.moveTo(300, 230);
+ctx.lineTo(300, 0);
+ctx.moveTo(300, 230);
+ctx.lineTo(0, 230);
+ctx.stroke();
+}
+		function er2(){
+	var canvas = document.getElementById('example2');
+var ctx = canvas.getContext('2d');
+ctx.beginPath();
+ctx.moveTo(320, 0);
+ctx.lineTo(320, 480);
+ctx.moveTo(0, 240);
+ctx.lineTo(640, 240);
+ctx.stroke();
+}
+		</script>
+	</head>
+	<body>
+ <button onclick="er1()">3.31а</button>
+<button onclick="er2()">3.31б</button>
+<br>
+	<canvas width='640' height='480' id='example1'>Обновите браузер</canvas>
+	<br>
+	<canvas width='640' height='480' id='example2'>Обновите браузер</canvas>
+	</body>
+</html>
+
