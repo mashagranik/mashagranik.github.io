@@ -63,3 +63,27 @@ document.getElementById("otvet").innerHTML = "Точка в области";
 document.getElementById("otvet").innerHTML = "Точка не в области"; 
 }
 } 
+  
+  function er1(){ 
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+ctx.beginPath(); 
+ctx.strokeStyle = 'green'; 
+drawpoint(); 
+ctx.moveTo(320, 0); 
+ctx.lineTo(320, 480); 
+ctx.moveTo(0, 240); 
+ctx.lineTo(640, 240); 
+ctx.moveTo(0, 235); 
+ctx.lineTo(640, 235);
+ctx.moveTo(0, 260 )
+ctx.lineTo(640,260)
+ctx.stroke(); 
+x=Number(document.getElementById("x_znach").value); 
+y=Number(document.getElementById("y_znach").value); 
+if (y <=1.5&& y >=-2 ){
+document.getElementById("otvet").innerHTML = "Точка в области";
+} else {
+document.getElementById("otvet").innerHTML = "Точка не в области"; 
+}
+} 
