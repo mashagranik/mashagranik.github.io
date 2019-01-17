@@ -40,7 +40,7 @@ ctx.fillRect(0, 0, 640, 480);
 ctx.closePath(); 
 
 } 
-function er1(){ 
+function er2(){ 
 var canvas = document.getElementById('example'); 
 var ctx = canvas.getContext('2d'); 
 ctx.beginPath(); 
@@ -87,3 +87,18 @@ document.getElementById("otvet").innerHTML = "Точка в области";
 document.getElementById("otvet").innerHTML = "Точка не в области"; 
 }
 } 
+  
+  function er3(){ 
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+ctx.beginPath(); 
+ctx.strokeStyle = 'green'; 
+drawpoint(); 
+ctx.moveTo(320, 0); 
+ctx.lineTo(320, 480); 
+ctx.moveTo(0, 240); 
+ctx.lineTo(640, 240); 
+
+ctx.stroke()
+ctx.strokeRect(330,200,10,250)
+
