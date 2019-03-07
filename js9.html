@@ -1,0 +1,64 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  
+  <script src="script.js">
+    function func1() {
+      n = Number(document.getElementById("n_f1_znach").value);
+      var i = 20;
+      while (i < 35) {
+        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML  + i + "<br> ";
+        i++ ;
+      }
+    }
+
+    function func2() {
+      n = Number(document.getElementById("n_f2_znach").value);
+      var i = 10;
+      do {
+        document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML +i*i+ "<br> ";
+        i++;
+      } while (i < n);
+    }
+
+    function func3() {
+      n = Number(document.getElementById("n_f3_znach").value);
+      var n;
+      for ( n = n; n < 50; n++) {
+        document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML + n*n*n + "<br> ";
+      }
+
+    }
+  </script>
+</head>
+
+<body>
+
+
+  <h1>Цикл while!</h1> n=
+  <input type="text" value="6" id="n_f1_znach">
+  <a href="#" onclick="func1()" class="circ-button">I</a>
+  <div id="otvet1"></div>
+<br>
+  <br>
+  <br>
+  <br>
+  <h1>Цикл Do while</h1> n=
+  <input type="text" value="6" id="n_f2_znach">
+  <a href="#" onclick="func2()" class="circ-button">II</a>
+  <div id="otvet2"></div>
+<br>
+  <br>
+  <br>
+  <br>
+  <h1>Цикл for</h1> n=
+  <input type="text" value="9" id="n_f3_znach">
+  <a href="#" onclick="func3()"  class="circ-button">III</a>
+  <div id="otvet3"></div>
+<br>
+  <br>
+  <br>
+  <br>
+</body>
+</html>
