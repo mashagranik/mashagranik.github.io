@@ -1,5 +1,3 @@
-<html>
-
 <head>
   <link rel="stylesheet" href="style.css">
   <script>
@@ -7,28 +5,12 @@
       n = Number(document.getElementById("n_f1_znach").value);
       var i = 20;
       while (i < n) {
-        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + i + " <br> ";
+        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + i + " <br>";
         i++;
       }
     }
 
-    function func2() {
-      n = Number(document.getElementById("n_f2_znach").value);
-      var i = 0;
-      do {
-        document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + i + " ";
-        i++;
-      } while (i < n);
-    }
-
-    function func3() {
-      n = Number(document.getElementById("n_f3_znach").value);
-      var i;
-      for (i = 0; i < n; i++) {
-        document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML + i + " ";
-      }
-
-    }
+   
   </script>
 </head>
 
@@ -36,8 +18,45 @@
 
 
   <h1>Цикл while!</h1> n=
-  <input type="text" value="35" id="n_f1_znach">
-  <a href="#" onclick="func1()" class="button red text-blanco text-shadow-negra">♥</a>
+  <input type="text" value="36" id="n_f1_znach">
+  <a href="#" onclick="func1()" class="button red text-blanco text-shadow-negra">a</a>
   <div id="otvet1"></div>
 <br>
-  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</body>
+</html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function func1() {
+      b = Number(document.getElementById("n_f1_znach").value);
+      var i = 10;
+      while (i < b) {
+        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + i*i + " <br>";
+        i++;
+      }
+    }
+
+   
+  </script>
+</head>
+
+<body>
+
+
+  <h1>Цикл while!</h1> n=
+  <input type="text" value="100" id="n_f1_znach">
+  <a href="#" onclick="func1()" class="button red text-blanco text-shadow-negra">HZ</a>
+  <div id="otvet1"></div>
+<br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</body>
+</html>
