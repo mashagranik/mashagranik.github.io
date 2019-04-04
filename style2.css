@@ -1,17 +1,33 @@
-<style>
-a.button7 {
-  font-weight: 700;
-  color: white;
-  text-decoration: none;
-  padding: .8em 1em calc(.8em + 3px);
-  border-radius: 3px;
-  background: rgb(64,199,129);
-  box-shadow: 0 -3px rgb(53,167,110) inset;
-  transition: 0.2s;
-} 
-a.button7:hover { background: rgb(53, 167, 110); }
-a.button7:active {
-  background: rgb(33,147,90);
-  box-shadow: 0 3px rgb(33,147,90) inset;
+body {
+  font-family: Open Sans;
+  font-size: 14px;
 }
-</style>
+
+* {
+  box-sizing: border-box;
+}
+
+.circ-button {
+  display: block;
+  width: 6em;
+  height: 6em;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background: green;
+  border: 10px dashed #fff;
+  border-radius: 6em;
+  padding-top: 2em;
+  transition: all linear 0.15s;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin: 2em auto;
+}
+.circ-button:hover {
+  background: magenta;
+  border-color: black;
+  color: black;
+}
