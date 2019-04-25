@@ -1,16 +1,16 @@
 <html>
 
 <head>
-<link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style2.css">
   <script>
-  
-  var checkbox = document.getElementById("chbx1");
+    
+     var checkbox = document.getElementById("chbx1");
   
   function foo(){
    if(checkbox.checked=true){
        func2()
          } }
-         
+    
  function func2() {
       n = Number(document.getElementById("n_f2_znach").value);
       var i = n;
@@ -21,21 +21,22 @@
         c++;
         document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + i +" "+ S + "<br> ";
         i--;
+        
       } while (i > -1);
-    document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + c-- + "<br>"; }
+      document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + S/c-- + "<br>";
+ }
     
      </script>
 </head>
 
 <body>
 
- <h1>6.1</h1> n=
+ <h1>Цикл</h1> n=
   <input type="text" value="6" id="n_f2_znach">
-  <span class="toggle">
+   <span class="toggle">
        <input type="checkbox" id="chbx1" onchange="func2()">
- <label data-off="tap here" data-on="or here"></label></span>
+ <label data-off="tap" data-on="tap"></label></span>
   <div id="otvet2"></div>
-
 <br>
   <br>
   
