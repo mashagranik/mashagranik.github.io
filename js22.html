@@ -1,0 +1,41 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="style2.css">
+  <script>
+  
+  var checkbox = document.getElementById("chbx1");
+  
+  function foo(){
+   if(checkbox.checked=true){
+       func2()
+         } }
+         
+ function func2() {
+      n = Number(document.getElementById("n_f2_znach").value);
+      var i = 0;
+      
+      do {
+        
+        i++;
+      } while (i*i <=  n);
+      document.getElementById("otvet2").innerHTML=i*i
+  }
+    
+     </script>
+</head>
+
+<body>
+
+ <h1>Цикл</h1> n=
+  <input type="text" value="70" id="n_f2_znach">
+  <span class="toggle">
+       <input type="checkbox" id="chbx1" onchange="func2()">
+ <label data-off="tap" data-on="tap"></label></span>
+  <div id="otvet2"></div>
+>
+<br>
+  <br>
+  
+  </body>
+</html>
